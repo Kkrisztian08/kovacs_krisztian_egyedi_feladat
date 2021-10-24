@@ -141,7 +141,7 @@ $zenek = Zene::osszes();
             <?php
                 foreach ($zenek as $zene) {
                             echo "<div class='col-4'>";
-                                echo "<div class='card text-center' >";
+                                echo "<div class='card' >";
                                     echo "<div class='card-body'>";
                                         echo "<h2>";
                                         echo $zene->getCim();
@@ -152,8 +152,8 @@ $zenek = Zene::osszes();
                                         echo "<p>" . $zene->getMegjelenesDatuma()->format('Y-m-d') . "</p>";
                                         echo "<form method='POST'>";
                                             echo "<input type='hidden' name='deleteId' value='" . $zene->getId() . "'>";
-                                            echo "<button type='submit'>Törlés</button>";
-                                            echo "<button><a href='zene_modositas.php?id=" . $zene->getId() . "'>Szerkeszt</a></button>";
+                                            echo "<button class='gombform' type='submit'>Törlés</button>";
+                                            echo "<button ><a href='zene_modositas.php?id=" . $zene->getId() . "'>Szerkeszt</a></button>";
                                         echo "</form>";
                                     echo "</div>";
                                 echo "</div>";
