@@ -1,0 +1,26 @@
+.adatok {
+    background-color: teal;
+    padding: 3em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    margin-bottom: 2em;
+}
+.adatok input{
+    border-radius: 5em;
+    width: 70%;
+    border:none;
+}
+.adatok div{
+    margin-bottom: 1em;
+}
+
+.adatok p {
+    color: white;
+    font-size: 1.5em;
+    padding-left: 2.5em;
+}
+
+.hibauzenet{
+    color: black;
+    font-size:1em ;
+}
