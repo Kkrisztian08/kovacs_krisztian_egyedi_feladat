@@ -1,5 +1,5 @@
 .adatok {
-    background-color: teal;
+    background-color: rgb(243, 158, 0);
     padding: 3em;
     padding-bottom: 0.5em;
     padding-right: 1em;
@@ -16,7 +16,7 @@
 }
 
 .adatok p {
-    color: white;
+    color: black;
     font-size: 1.5em;
     padding-left: 2.5em;
 }
@@ -28,10 +28,68 @@
 .card{
     text-align: center;
     margin-bottom: 1.4em;
+    background-image: url("szellem.jpg");
+    color: white;
+}
+.card p{
+    font-size: 160%;
 }
 .gombform{
     margin-left:5%;
-    margin-right: 30%;
+    background-color: black; 
+    color: rgb(255, 157, 0); 
+    border: 2px solid rgb(255, 157, 0);
+}
+.gombform:hover {
+    background-color: rgb(255, 157, 0);
+    color: black;
+}
+
+form button {
+    border: none;
+    color: white;
+    padding: 2% 4%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5em;
+  }
+  
+.linkform{
+    margin-left:30%;
+}
+.linkform:link, .linkform:visited {
+    border: none;
+    color: white;
+    padding: 2% 4%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5em;
+    background-color: black; 
+    color: rgb(255, 157, 0); 
+    border: 2px solid rgb(255, 157, 0);
+  }
+  
+.linkform:hover, .linkform:active {
+    background-color: rgb(255, 157, 0);
+    color: black;
+}
+body{
+    background-image: url("kep.jpg");
+}
+.hozzaad{
+    
+    background-color: black;
+    height: 110%;
+    color: rgb(255, 157, 0);
+}
+.kozep{
+    text-align: center;
 }
 
 

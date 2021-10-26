@@ -130,8 +130,8 @@ $zenek = Zene::osszes();
                 <div class="col-8"><input type="date" name="megjelenes_datuma"  value='<?php visszatolt($megjelenes_datumaMezo) ?>'></input></div>
                 <div class="hibauzenet"><?php echo $megjelenes_datumaHibaUzenet; ?></div>
             </div>
-            <div class="text-center row">
-                <div class="col-12"><input type="submit" value="Új zene hozzáadása"></div>
+            <div class=" kozep row ">
+                <div class="col-12 "><input class="hozzaad" type="submit" value="Új zene hozzáadása"></div>
             </div>
         </form>
     </div >
@@ -153,7 +153,7 @@ $zenek = Zene::osszes();
                                         echo "<form method='POST'>";
                                             echo "<input type='hidden' name='deleteId' value='" . $zene->getId() . "'>";
                                             echo "<button class='gombform' type='submit'>Törlés</button>";
-                                            echo "<button ><a href='zene_modositas.php?id=" . $zene->getId() . "'>Szerkeszt</a></button>";
+                                            echo "<a class='linkform' href='zene_modositas.php?id=" . $zene->getId() . "'>Szerkeszt</a>";
                                         echo "</form>";
                                     echo "</div>";
                                 echo "</div>";
