@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class="row kozep">
                 <div class="col-12"><input class="hozzaad" type='submit' value='szerkeszt'>
-            </div>
+            </div>          
         </form>
     </div>
 </body>

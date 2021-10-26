@@ -11,7 +11,7 @@ $cimMezo= '';
 $eloadoMezo= '';
 $stilusMezo= '';
 $hosszMezo= '';
-$megjelenes_datumaMezo= '';
+$datumMezo= '';
 
 
 
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $eloadoMezo=$_POST['eloado']??'';
     $stilusMezo=$_POST['stilus'] ?? '';
     $hosszMezo=$_POST['hossz'] ?? '';
-    $megjelenes_datumaMezo=$_POST['megjelenes_datuma'] ?? '';
+    $datumMezo=$_POST['megjelenes_datuma'] ?? '';
 
 
     $deleteId = $_POST['deleteId'] ?? '';
@@ -83,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $eloadoMezo= '';
             $stilusMezo= '';
             $hosszMezo= '';
-            $megjelenes_datumaMezo= '';
+            $datumMezo= '';
         }
     }
     
@@ -127,7 +127,7 @@ $zenek = Zene::osszes();
             </div>
             <div class="row">
                 <p class="col-4">Megjelenés dátuma:</p>
-                <div class="col-8"><input type="date" name="megjelenes_datuma"  value='<?php visszatolt($megjelenes_datumaMezo) ?>'></input></div>
+                <div class="col-8"><input type="date" name="megjelenes_datuma"  value='<?php visszatolt($datumMezo) ?>'></input></div>
                 <div class="hibauzenet"><?php echo $megjelenes_datumaHibaUzenet; ?></div>
             </div>
             <div class=" kozep row ">
