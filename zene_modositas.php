@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src='main.js'></script>
 </head>
 <body>
-<div class=" adatok container">
+<div class="adatok container">
         <form method='POST'>
             <div class="row">
                 <p class="col-4">Cím:</p>
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class="row">
                 <p class="col-4">Megjelenés dátuma:</p>
-                <div class="col-8"><input type='date' name='megjelenes_datuma' value='<?php echo $zene->getMegjelenesDatuma(); ?>'></div>
+                <div class="col-8"><input type='text' name='megjelenes_datuma' value='<?php echo $zene->getMegjelenesDatuma(); ?>'></div>
             </div>
             <div class="row kozep">
                 <div class="col-12"><input class="hozzaad" type='submit' value='szerkeszt'>
