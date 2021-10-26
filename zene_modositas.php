@@ -17,13 +17,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ujEloado = $_POST['eloado'] ?? '';
     $ujStilus = $_POST['stilus'] ?? '';
     $ujHossz = $_POST['hossz'] ?? 0;
-    $ujMegjelenes_datuma = $_POST['megjelenes_datuma'] ?? '';
+    $ujdatum = $_POST['megjelenes_datuma'] ?? '';
 
     $zene->setCim($ujCim);
     $zene->setEloado($ujEloado);
     $zene->setStilus($ujStilus);
     $zene->setHossz($ujHossz);
-    $zene->setMegjelenesDatuma(new DateTime($ujMegjelenes_datuma));
+    $zene->setMegjelenesDatuma(new DateTime($ujdatum));
 
     $zene->mentes();
 }
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class="row">
                 <p class="col-4">Megjelenés dátuma:</p>
-                <div class="col-8"><input type='text' name='megjelenes_datuma' value='<?php echo $zene->getMegjelenesDatuma(); ?>'></div>
+                <div class="col-8"><input type='date' name='megjelenes_datuma' value='<?php echo $zene->getMegjelenesDatuma(); ?>'></div>
             </div>
             <div class="row kozep">
                 <div class="col-12"><input class="hozzaad" type='submit' value='szerkeszt'>

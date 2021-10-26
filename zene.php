@@ -118,7 +118,8 @@ class Zene{
             $eredmeny[0]['eloado'],
             $eredmeny[0]['stilus'],
             $eredmeny[0]['hossz'],
-            new DateTime($eredmeny[0]['megjelenes_datuma']));
+            new DateTime($eredmeny[0]['megjelenes_datuma'])
+        );
         $zene->id = $eredmeny[0]['id'];
         return $zene;
     }

@@ -1,3 +1,7 @@
+body{
+    background-image: url("kep.jpg");
+}
+
 .adatok {
     background-color: rgb(243, 158, 0);
     padding: 3em;
@@ -6,11 +10,13 @@
     margin-bottom: 2em;
     margin-top: 1em;
 }
+
 .adatok input{
     border-radius: 5em;
     width: 70%;
     border:none;
 }
+
 .adatok div{
     margin-bottom: 0.5em;
 }
@@ -19,12 +25,16 @@
     color: black;
     font-size: 1.5em;
     padding-left: 2.5em;
+    
 }
 
 .hibauzenet{
-    color: rgb(255, 217, 0);
-    font-size:1em ;
+    color: rgb(192, 28, 28);
+    font-size:1.3em ;
+    margin-left: 34%;
+    font-weight: bold;
 }
+
 .hozzaad{
     
     background-color: black;
@@ -45,12 +55,14 @@
 .card p{
     font-size: 160%;
 }
+
 .gombform{
     margin-left:10%;
     background-color: black; 
     color: rgb(255, 157, 0); 
     border: 2px solid rgb(255, 157, 0);
 }
+
 .gombform:hover {
     background-color: rgb(255, 157, 0);
     color: black;
@@ -71,6 +83,7 @@ form button {
 .linkform{
     margin-left:25%;
 }
+
 .linkform:link, .linkform:visited {
     border: none;
     color: white;
@@ -84,15 +97,13 @@ form button {
     background-color: black; 
     color: rgb(255, 157, 0); 
     border: 2px solid rgb(255, 157, 0);
-  }
+}
   
 .linkform:hover, .linkform:active {
     background-color: rgb(255, 157, 0);
     color: black;
 }
-body{
-    background-image: url("kep.jpg");
-}
+
 
 
 

@@ -45,34 +45,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $ujCim = $_POST['cim'] ?? '';
         if (empty($_POST['cim'])) {
             $cimHiba = true;
-            $cimHibaUzenet = 'A cím nem lehet üres!';
+            $cimHibaUzenet = 'Kötelező megadni a zene címét!';
         }
 
         $ujEloado = $_POST['eloado'] ?? '';
         if (empty($_POST['eloado'])) {
             $eloadoHiba = true;
-            $eloadoHibaUzenet = 'A előadó nem lehet üres!';
+            $eloadoHibaUzenet = 'Kötelező megadni a zene előadóját!';
         }
 
         $ujStilus = $_POST['stilus'] ?? '';
         if (empty($_POST['stilus'])) {
             $stilusHiba = true;
-            $stilusHibaUzenet = 'A stilus nem lehet üres!';
+            $stilusHibaUzenet = 'Kötelező megadni a zene stílusát!';
         }
 
         $ujHossz = $_POST['hossz'] ?? 0;
         if (empty($_POST['hossz'])) {
             $hosszHiba = true;
-            $hosszHibaUzenet = 'A hossz nem lehet üres!';
+            $hosszHibaUzenet = 'Kötelező megadni a zene hosszát!';
         }elseif (!is_numeric($_POST['hossz'])) {
             $hosszHiba = true;
-            $hosszHibaUzenet = 'csak szám lehet!';
+            $hosszHibaUzenet = 'A hossz csak szám lehet!';
         }
 
         $ujMegjelenes_datuma = $_POST['megjelenes_datuma'] ?? '';
         if (empty($_POST['megjelenes_datuma'])) {
             $megjelenes_datumaHiba = true;
-            $megjelenes_datumaHibaUzenet = 'A megjelenés dátuma nem lehet üres!';
+            $megjelenes_datumaHibaUzenet = 'Kötelező megadni a zene megjelenési dátumát!';
         }
         
 
@@ -107,22 +107,22 @@ $zenek = Zene::osszes();
         <form method="POST">
             <div class="row">
                 <p class="col-4">Cím:</p>
-                <div class="col-8"><input  name="cim" placeholder="Waterloo" value='<?php visszatolt($cimMezo) ?>'></input></div>
+                <div class="col-8"><input type="text"  name="cim" placeholder="Waterloo" value='<?php visszatolt($cimMezo) ?>'></input></div>
                 <div class="hibauzenet"><?php echo $cimHibaUzenet; ?></div>
             </div>
             <div class="row">
                 <p class="col-4">Előadó:</p>
-                <div class="col-8"><input name="eloado" placeholder="ABBA" value='<?php visszatolt($eloadoMezo) ?>'></input></div>
+                <div class="col-8"><input type="text" name="eloado" placeholder="ABBA" value='<?php visszatolt($eloadoMezo) ?>'></input></div>
                 <div class="hibauzenet"><?php echo $eloadoHibaUzenet; ?></div>
             </div>
             <div class="row">
                 <p class="col-4">Stílus:</p>
-                <div class="col-8"><input name="stilus" placeholder="europop" value='<?php visszatolt($stilusMezo) ?>'></input></div>
+                <div class="col-8"><input type="text" name="stilus" placeholder="europop" value='<?php visszatolt($stilusMezo) ?>'></input></div>
                 <div class="hibauzenet"><?php echo $stilusHibaUzenet; ?></div>
             </div>
             <div class="row">
                 <p class="col-4">Zene hossza (percben):</p>
-                <div class="col-8"><input name="hossz" placeholder="4.2" value='<?php visszatolt($hosszMezo) ?>'></input></div>
+                <div class="col-8"><input type="number" name="hossz" placeholder="4.2 perc" value='<?php visszatolt($hosszMezo) ?>'></input></div>
                 <div class="hibauzenet"><?php echo $hosszHibaUzenet; ?></div>
             </div>
             <div class="row">
