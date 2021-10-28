@@ -104,6 +104,31 @@ form button {
     color: black;
 }
 
+.linkvissza{
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+.linkvissza:link, .linkvissza:visited {
+    border: none;
+    color: white;
+    padding: 1% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5em;
+    background-color: black; 
+    color: rgb(255, 157, 0); 
+    border: 2px solid rgb(255, 157, 0);
+}
+  
+.linkvissza:hover, .linkvissza:active {
+    background-color: rgb(255, 157, 0);
+    color: black;
+}
+
 
 
 
