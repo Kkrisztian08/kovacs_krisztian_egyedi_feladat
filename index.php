@@ -91,6 +91,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 $zenek = Zene::osszes();
 
+/*
+Még meg kell csinálni!
+
+Number tipushoz egy minimum számot is be kell állitani pl a zene hossza minimum 0.10 percnek kell lennie!!
+
+
+*/
 
 ?><!DOCTYPE html>
 <html>
