@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class="row">
                 <p class="col-4">Megjelenés dátuma:</p>
-                <div class="col-8"><input type='date' name='megjelenes_datuma' value='<?php echo $zene->getMegjelenesDatuma(); ?>'></div>
+                <div class="col-8"><input type='date' name='megjelenes_datuma' value='<?php echo $zene->getMegjelenesDatuma()->format("Y-m-d"); ?>'></div>
             </div>
             <div class="row kozep">
                 <div class="col-12"><input class="hozzaad" type='submit' value='szerkeszt'>

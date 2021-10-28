@@ -130,6 +130,7 @@ class Zene{
         $db->prepare('UPDATE zenek SET cim = :cim, eloado = :eloado, stilus = :stilus, hossz = :hossz, megjelenes_datuma = :megjelenes_datuma
             WHERE id = :id')
             ->execute([
+                ':id' => $this->id,
                 ':cim' => $this->cim,
                 ':eloado' => $this->eloado,
                 ':stilus' => $this->stilus,
