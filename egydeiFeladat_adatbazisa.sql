@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2021. Okt 24. 20:02
+-- Létrehozás ideje: 2021. Okt 28. 18:39
 -- Kiszolgáló verziója: 10.4.17-MariaDB
 -- PHP verzió: 8.0.1
 
@@ -41,6 +41,10 @@ CREATE TABLE `zenek` (
 --
 
 INSERT INTO `zenek` (`id`, `cim`, `eloado`, `stilus`, `hossz`, `megjelenes_datuma`) VALUES
+(1, 'Total Eclipse of the Heart', 'Bonnie Tyler', 'rock', 4.3, '1983-05-26'),
+(2, 'Waterloo', 'ABBA', 'europop', 2.46, '1974-03-04'),
+(3, 'Zitti e Buoni', 'Maneskin', 'rock', 3.19, '2021-03-03'),
+(4, 'Titanium', 'Sia', 'pop', 4.05, '2011-11-26'),
 (5, 'We Will Rock You', 'Queen', 'rock', 2.01, '1977-10-07');
 
 --
@@ -61,7 +65,7 @@ ALTER TABLE `zenek`
 -- AUTO_INCREMENT a táblához `zenek`
 --
 ALTER TABLE `zenek`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
