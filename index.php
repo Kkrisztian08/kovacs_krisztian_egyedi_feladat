@@ -122,7 +122,7 @@ $zenek = Zene::osszes();
             </div>
             <div class="row">
                 <p class="col-4">Zene hossza (percben):</p>
-                <div class="col-8"><input type="number" name="hossz" placeholder="4.2 perc" value='<?php visszatolt($hosszMezo) ?>'></input></div>
+                <div class="col-8"><input type="number" step=any name="hossz" placeholder="4.2 perc" value='<?php visszatolt($hosszMezo) ?>'></input></div>
                 <div class="hibauzenet"><?php echo $hosszHibaUzenet; ?></div>
             </div>
             <div class="row">
