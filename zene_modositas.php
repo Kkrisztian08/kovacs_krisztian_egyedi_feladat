@@ -109,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class="row">
                 <p class="col-4">Zene hossza (percben):</p>
-                <div class="col-8"><input type='number' step=any name='hossz' value='<?php echo $zene->getHossz(); ?>'></div>
+                <div class="col-8"><input type='number' step=any min="1.00" max="20.00" name='hossz' value='<?php echo $zene->getHossz(); ?>'></div>
                 <div class="hibauzenet"><?php echo $hosszHibaUzenet; ?></div>
             </div>
             <div class="row">
