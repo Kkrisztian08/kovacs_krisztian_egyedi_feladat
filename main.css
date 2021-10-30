@@ -78,7 +78,7 @@ form button {
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 5em;
-  }
+}
   
 .linkform{
     margin-left:25%;
@@ -111,7 +111,6 @@ form button {
 
 .linkvissza:link, .linkvissza:visited {
     border: none;
-    color: white;
     padding: 1% 2%;
     text-align: center;
     text-decoration: none;
@@ -119,14 +118,14 @@ form button {
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 5em;
-    background-color: black; 
-    color: rgb(255, 157, 0); 
-    border: 2px solid rgb(255, 157, 0);
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
 }
   
 .linkvissza:hover, .linkvissza:active {
-    background-color: rgb(255, 157, 0);
-    color: black;
+    background-color: black;
+    color: rgb(255, 157, 0);
 }
 
 
