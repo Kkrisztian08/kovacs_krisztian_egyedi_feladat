@@ -92,14 +92,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 $zenek = Zene::osszes();
 
-/*
-
-Még meg kell csinálni!
-
-Number tipushoz egy minimum számot is be kell állitani pl a zene hossza minimum 0.10 percnek kell lennie!!
-
-*/
-
 ?><!DOCTYPE html>
 <html>
     <head>
@@ -130,7 +122,7 @@ Number tipushoz egy minimum számot is be kell állitani pl a zene hossza minimu
             </div>
             <div class="row">
                 <p class="col-4">Zene hossza (percben):</p>
-                <div class="col-8"><input type="number" step=any min="1.00" max="20.00" name="hossz" placeholder="4,2 perc" value='<?php visszatolt($hosszMezo) ?>'></input></div>
+                <div class="col-8"><input type="number" step=any min="1" max="20" name="hossz" placeholder="4,2 perc" value='<?php visszatolt($hosszMezo) ?>'></input></div>
                 <div class="hibauzenet"><?php echo $hosszHibaUzenet; ?></div>
             </div>
             <div class="row">
