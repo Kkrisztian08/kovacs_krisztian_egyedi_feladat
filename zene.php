@@ -114,10 +114,10 @@ class Zene{
         }
 
         $zene = new Zene(
-            $eredmeny[0]['cim'],
-            $eredmeny[0]['eloado'],
-            $eredmeny[0]['stilus'],
-            $eredmeny[0]['hossz'],
+                         $eredmeny[0]['cim'],
+                         $eredmeny[0]['eloado'],
+                         $eredmeny[0]['stilus'],
+                         $eredmeny[0]['hossz'],
             new DateTime($eredmeny[0]['megjelenes_datuma'])
         );
         $zene->id = $eredmeny[0]['id'];
