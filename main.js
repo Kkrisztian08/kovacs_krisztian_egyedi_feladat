@@ -10,40 +10,40 @@ function validacio() {
     if (cim.value === "") {
         document.getElementById('hibaCim').innerHTML = "A cím megadása kötelező";
         logikai = false;
-    } else if (nev.value !== "") {
+    } else if (cim.value !== "") {
         document.getElementById('hibaCim').innerHTML = "";
     }
 
     if (eloado.value === "") {
         document.getElementById('hibaEloado').innerHTML = "Az előadó megadása kötelező";
         logikai = false;
-    } else if (nev.value !== "") {
+    } else if (eloado.value !== "") {
         document.getElementById('hibaEloado').innerHTML = "";
     }
 
     if (stilus.value === "") {
         document.getElementById('hibaStilus').innerHTML = "A stílus megadása kötelező";
         logikai = false;
-    } else if (nev.value !== "") {
+    } else if (stilus.value !== "") {
         document.getElementById('hibaStilus').innerHTML = "";
     }
 
     if (hossz.value.length == 0) {
         document.getElementById('hibaHossz').innerHTML = "A hossz megadása kötelező";
         logikai = false;
-    } else if (isNaN(magassag.value)) {
+    } else if (isNaN(hossz.value)) {
         document.getElementById('hibaHossz').innerHTML = "A hossznak számnak kell lennie";
         logikai = false;
-    } else if (magassag.value.length != 0) {
+    } else if (hossz.value.length != 0) {
         document.getElementById('hibaHossz').innerHTML = "";
-    } else if (!isNaN(magassag.value)) {
+    } else if (!isNaN(hossz.value)) {
         document.getElementById('hibaHossz').innerHTML = "";
     }
 
     if (megjelenes.value === "") {
         document.getElementById('hibaDatum').innerHTML = "A megjelenés dátuma megadása kötelező";
         logikai = false;
-    } else if (szulDatum.value !== "") {
+    } else if (megjelenes.value !== "") {
         document.getElementById('hibaDatum').innerHTML = "";
     }
     return logikai;
