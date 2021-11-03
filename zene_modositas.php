@@ -95,27 +95,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="row">
                 <p class="col-4">Cím:</p>
                 <div class="col-8"><input type='text' name='cim' value='<?php echo $zene->getCim(); ?>'></div>
-                <div class="hibauzenet"><?php echo $cimHibaUzenet; ?></div>
+                <div class="hibauzenet" ><?php echo $cimHibaUzenet; ?></div>
             </div>
             <div class="row">
                 <p class="col-4">Előadó:</p>
                 <div class="col-8"><input type='text' name='eloado' value='<?php echo $zene->getEloado(); ?>'></div>
-                <div class="hibauzenet"><?php echo $eloadoHibaUzenet; ?></div>
+                <div class="hibauzenet" ><?php echo $eloadoHibaUzenet; ?></div>
             </div>
             <div class="row">
                 <p class="col-4">Stílus:</p>
                 <div class="col-8"><input type='text' name='stilus' value='<?php echo $zene->getStilus(); ?>'></div>
-                <div class="hibauzenet"><?php echo $stilusHibaUzenet; ?></div>
+                <div class="hibauzenet" ><?php echo $stilusHibaUzenet; ?></div>
             </div>
             <div class="row">
                 <p class="col-4">Zene hossza (percben):</p>
                 <div class="col-8"><input type='number' step=any min="1" max="20" name='hossz' value='<?php echo $zene->getHossz(); ?>'></div>
-                <div class="hibauzenet"><?php echo $hosszHibaUzenet; ?></div>
+                <div class="hibauzenet" ><?php echo $hosszHibaUzenet; ?></div>
             </div>
             <div class="row">
                 <p class="col-4">Megjelenés dátuma:</p>
                 <div class="col-8"><input type='date' name='megjelenes_datuma' value='<?php echo $zene->getMegjelenesDatuma()->format("Y-m-d"); ?>'></div>
-                <div class="hibauzenet"><?php echo $megjelenes_datumaHibaUzenet; ?></div>
+                <div class="hibauzenet" ><?php echo $megjelenes_datumaHibaUzenet; ?></div>
             </div>
             <div class="row kozep">
                 <div class="col-12"><input class="hozzaad" type='submit' value='szerkeszt'>

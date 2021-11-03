@@ -101,34 +101,35 @@ $zenek = Zene::osszes();
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
     </head>
     <body>
     <div class=" adatok container">
-        <form method="POST">
+        <form method="POST" onsubmit="return validacio()";>
             <div class="row">
                 <p class="col-4">Cím:</p>
-                <div class="col-8"><input type="text"  name="cim" placeholder="Waterloo" value='<?php visszatolt($cimMezo) ?>'></input></div>
-                <div class="hibauzenet"><?php echo $cimHibaUzenet; ?></div>
+                <div class="col-8"><input type="text"  name="cim" placeholder="Waterloo" id="ciminput" value='<?php visszatolt($cimMezo) ?>'></input></div>
+                <div class="hibauzenet" id="hibaCim"><?php echo $cimHibaUzenet; ?></div>
             </div>
             <div class="row">
                 <p class="col-4">Előadó:</p>
-                <div class="col-8"><input type="text" name="eloado" placeholder="ABBA" value='<?php visszatolt($eloadoMezo) ?>'></input></div>
-                <div class="hibauzenet"><?php echo $eloadoHibaUzenet; ?></div>
+                <div class="col-8"><input type="text" name="eloado" placeholder="ABBA" id="eloadoinput" value='<?php visszatolt($eloadoMezo) ?>'></input></div>
+                <div class="hibauzenet" id="hibaEloado"><?php echo $eloadoHibaUzenet; ?></div>
             </div>
             <div class="row">
                 <p class="col-4">Stílus:</p>
-                <div class="col-8"><input type="text" name="stilus" placeholder="europop" value='<?php visszatolt($stilusMezo) ?>'></input></div>
-                <div class="hibauzenet"><?php echo $stilusHibaUzenet; ?></div>
+                <div class="col-8"><input type="text" name="stilus" placeholder="europop" id="stilusinput" value='<?php visszatolt($stilusMezo) ?>'></input></div>
+                <div class="hibauzenet" id="hibaStilus"><?php echo $stilusHibaUzenet; ?></div>
             </div>
             <div class="row">
                 <p class="col-4">Zene hossza (percben):</p>
-                <div class="col-8"><input type="number" step=any min="1" max="20" name="hossz" placeholder="4,2 perc" value='<?php visszatolt($hosszMezo) ?>'></input></div>
-                <div class="hibauzenet"><?php echo $hosszHibaUzenet; ?></div>
+                <div class="col-8"><input type="number" step=any min="1" max="20" name="hossz" placeholder="4,2 perc" id="hosszinput" value='<?php visszatolt($hosszMezo) ?>'></input></div>
+                <div class="hibauzenet" id="hibaHossz"><?php echo $hosszHibaUzenet; ?></div>
             </div>
             <div class="row">
                 <p class="col-4">Megjelenés dátuma:</p>
-                <div class="col-8"><input type="date" name="megjelenes_datuma"  value='<?php visszatolt($datumMezo) ?>'></input></div>
-                <div class="hibauzenet"><?php echo $megjelenes_datumaHibaUzenet; ?></div>
+                <div class="col-8"><input type="date" name="megjelenes_datuma" id="datuminput" value='<?php visszatolt($datumMezo) ?>'></input></div>
+                <div class="hibauzenet" id="hibaDatum"><?php echo $megjelenes_datumaHibaUzenet; ?></div>
             </div>
             <div class=" kozep row ">
                 <div class="col-12 "><input class="hozzaad" type="submit" value="Új zene hozzáadása"></div>
