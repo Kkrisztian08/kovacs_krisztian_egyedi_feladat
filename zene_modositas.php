@@ -109,12 +109,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class="row">
                 <p class="col-4">Zene hossza (percben):</p>
-                <div class="col-8"><input type='number' step=any min="1" max="20" name='hossz' value='<?php echo $zene->getHossz(); ?>'></div>
+                <div class="col-8"><input type='number'  step=any min="1" max="20" name='hossz' required value='<?php echo $zene->getHossz(); ?> '></div>
                 <div class="hibauzenet" ><?php echo $hosszHibaUzenet; ?></div>
             </div>
             <div class="row">
                 <p class="col-4">Megjelenés dátuma:</p>
-                <div class="col-8"><input type='date' name='megjelenes_datuma' value='<?php echo $zene->getMegjelenesDatuma()->format("Y-m-d"); ?>'></div>
+                <div class="col-8"><input  type='date' name='megjelenes_datuma' value='<?php echo $zene->getMegjelenesDatuma()->format("Y-m-d"); ?>'></div>
                 <div class="hibauzenet" ><?php echo $megjelenes_datumaHibaUzenet; ?></div>
             </div>
             <div class="row kozep">
