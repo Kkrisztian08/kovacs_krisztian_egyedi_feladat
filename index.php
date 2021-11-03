@@ -105,7 +105,7 @@ $zenek = Zene::osszes();
     </head>
     <body>
     <div class=" adatok container">
-        <form method="POST" onsubmit="return validacio()";>
+        <form method="POST" onsubmit="return validacio();">
             <div class="row">
                 <p class="col-4">Cím:</p>
                 <div class="col-8"><input type="text"  name="cim" placeholder="Waterloo" id="ciminput" value='<?php visszatolt($cimMezo) ?>'></input></div>
@@ -132,7 +132,7 @@ $zenek = Zene::osszes();
                 <div class="hibauzenet" id="hibaDatum"><?php echo $megjelenes_datumaHibaUzenet; ?></div>
             </div>
             <div class=" kozep row ">
-                <div class="col-12 "><input class="hozzaad" type="submit" value="Új zene hozzáadása"></div>
+                <div class="col-12 "><input class="hozzaad" type="submit" value="Új zene hozzáadása" id="ujZene"></div>
             </div>
         </form>
     </div >

@@ -8,7 +8,7 @@ function validacio() {
     let logikai = true;
 
     if (cim.value === "") {
-        document.getElementById('hibaCim').innerHTML = "Cím megadása kötelező";
+        document.getElementById('hibaCim').innerHTML = "A cím megadása kötelező";
         logikai = false;
     } else if (nev.value !== "") {
         document.getElementById('hibaCim').innerHTML = "";
@@ -46,7 +46,12 @@ function validacio() {
     } else if (szulDatum.value !== "") {
         document.getElementById('hibaDatum').innerHTML = "";
     }
-
-
     return logikai;
 }
+
+function index() {
+    document.getElementById('ujZene').addEventListener('click', validacio);
+}
+document.addEventListener('DOMContentLoaded', index);
+
+

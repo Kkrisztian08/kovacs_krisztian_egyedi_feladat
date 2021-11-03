@@ -118,7 +118,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="hibauzenet" ><?php echo $megjelenes_datumaHibaUzenet; ?></div>
             </div>
             <div class="row kozep">
-                <div class="col-12"><input class="hozzaad" type='submit' value='szerkeszt'>
+                <div class="col-12"><input class="hozzaad" type='submit' value='szerkeszt' >
             </div>          
         </form>
         <?php } else { ?>
